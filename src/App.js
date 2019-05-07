@@ -18,6 +18,7 @@ HTMLAudioElement.prototype.stop = function()
 };
 
 const notes = [A, B, C, D, E, F, G];
+const classes = [ 'flame-red', 'flame-orange', 'flame-yellow', "flame-green", 'flame-blue', 'flame-darkblue', 'flame-violet'];
 
 class App extends React.Component {
 
@@ -56,8 +57,8 @@ class App extends React.Component {
                         onKeyHandle={() => this.hide_flame(index+1)}
                     />
                 <div className="candle" >
-                  <div className="flame" id={index+1}>
-                    <div className="shadows"></div>
+                  <div className={`${classes[index]}`} id={index+1}>
+                      <div className="shadows"></div>
                     <div className="top"></div>
                   </div>
                 </div>
