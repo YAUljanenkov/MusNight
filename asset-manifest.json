@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MusNight/static/css/main.1281bc96.chunk.css",
+    "main.js": "/MusNight/static/js/main.744f256b.chunk.js",
+    "main.js.map": "/MusNight/static/js/main.744f256b.chunk.js.map",
+    "runtime~main.js": "/MusNight/static/js/runtime~main.065c49f0.js",
+    "runtime~main.js.map": "/MusNight/static/js/runtime~main.065c49f0.js.map",
+    "static/js/2.15bc8e8a.chunk.js": "/MusNight/static/js/2.15bc8e8a.chunk.js",
+    "static/js/2.15bc8e8a.chunk.js.map": "/MusNight/static/js/2.15bc8e8a.chunk.js.map",
+    "index.html": "/MusNight/index.html",
+    "precache-manifest.23da3cb2efb8c71f48d22822faba8670.js": "/MusNight/precache-manifest.23da3cb2efb8c71f48d22822faba8670.js",
+    "service-worker.js": "/MusNight/service-worker.js",
+    "static/css/main.1281bc96.chunk.css.map": "/MusNight/static/css/main.1281bc96.chunk.css.map",
+    "static/media/1.wav": "/MusNight/static/media/1.cca99965.wav",
+    "static/media/2.wav": "/MusNight/static/media/2.fea51b10.wav",
+    "static/media/3.wav": "/MusNight/static/media/3.0c0cf51b.wav",
+    "static/media/4.wav": "/MusNight/static/media/4.d8bf6d47.wav",
+    "static/media/5.wav": "/MusNight/static/media/5.148d978b.wav",
+    "static/media/6.wav": "/MusNight/static/media/6.59cc4111.wav",
+    "static/media/7.wav": "/MusNight/static/media/7.5e0c004d.wav"
+  }
+}
