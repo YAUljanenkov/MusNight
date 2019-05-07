@@ -10,12 +10,12 @@ body{
     justify-content: center;
 }
 
-$flame-height: 150px;
+$flame-height: 200px;
 
 
 .candle{
-    width: 34px;
-    margin: 30px 40px 0 40px;
+    width: 45px;
+    margin: 30px 60px 0 60px;
     position: relative;
     height: 80%;
     align-self: flex-end;
@@ -25,15 +25,15 @@ $flame-height: 150px;
 .flame-orange {
     $main: #ff6a00;
     $second: gold;
-    opacity: 0;
-    width: 20px;
+    
+    width: 30px;
     height: $flame-height;
     margin: 0px auto;
     position: relative;
     animation: move 3s infinite, move-left 3s infinite;
     transform-origin: 50% 90%;
     .top {
-        width: 20px;
+        width: 30px;
         height: 100%;
         position: absolute;
         top: 0;
@@ -58,7 +58,7 @@ $flame-height: 150px;
         left: 50%;
         top: 0;
         width: 1px;
-        height: 60px;
+        height: 100px;
         border-radius: 50%;
         box-shadow: 0 5px 20px 15px $second,
         0 0px 100px 20px $main,
@@ -105,15 +105,15 @@ $flame-height: 150px;
 .flame-red {
     $main: #ff1900;
     $second: #ff4400;
-    opacity: 0;
-    width: 20px;
+    
+    width: 30px;
     height: $flame-height;
     margin: 0px auto;
     position: relative;
     animation: move 3s infinite, move-left 3s infinite;
     transform-origin: 50% 90%;
     .top {
-        width: 20px;
+        width: 30px;
         height: 100%;
         position: absolute;
         top: 0;
@@ -138,7 +138,7 @@ $flame-height: 150px;
         left: 50%;
         top: 0;
         width: 1px;
-        height: 60px;
+        height: 100px;
         border-radius: 50%;
         box-shadow: 0 5px 20px 15px $second,
         0 0px 100px 20px $main,
@@ -184,15 +184,15 @@ $flame-height: 150px;
 .flame-yellow {
     $main: #ffa31b;
     $second: #eaff1b;
-    opacity: 0;
-    width: 20px;
+    
+    width: 30px;
     height: $flame-height;
     margin: 0px auto;
     position: relative;
     animation: move 3s infinite, move-left 3s infinite;
     transform-origin: 50% 90%;
     .top {
-        width: 20px;
+        width: 30px;
         height: 100%;
         position: absolute;
         top: 0;
@@ -217,7 +217,7 @@ $flame-height: 150px;
         left: 50%;
         top: 0;
         width: 1px;
-        height: 60px;
+        height: 100px;
         border-radius: 50%;
         box-shadow: 0 5px 20px 15px $second,
         0 0px 100px 20px $main,
@@ -263,15 +263,15 @@ $flame-height: 150px;
 .flame-green {
     $main: #23be00;
     $second: #2dff00;
-    opacity: 0;
-    width: 20px;
+    
+    width: 30px;
     height: $flame-height;
     margin: 0px auto;
     position: relative;
     animation: move 3s infinite, move-left 3s infinite;
     transform-origin: 50% 90%;
     .top {
-        width: 20px;
+        width: 30px;
         height: 100%;
         position: absolute;
         top: 0;
@@ -296,7 +296,7 @@ $flame-height: 150px;
         left: 50%;
         top: 0;
         width: 1px;
-        height: 60px;
+        height: 100px;
         border-radius: 50%;
         box-shadow: 0 5px 20px 15px $second,
         0 0px 100px 20px $main,
@@ -342,15 +342,15 @@ $flame-height: 150px;
 .flame-blue {
     $main: #3590be;
     $second: #7fcfff;
-    opacity: 0;
-    width: 20px;
+    
+    width: 30px;
     height: $flame-height;
     margin: 0px auto;
     position: relative;
     animation: move 3s infinite, move-left 3s infinite;
     transform-origin: 50% 90%;
     .top {
-        width: 20px;
+        width: 30px;
         height: 100%;
         position: absolute;
         top: 0;
@@ -375,7 +375,7 @@ $flame-height: 150px;
         left: 50%;
         top: 0;
         width: 1px;
-        height: 60px;
+        height: 100px;
         border-radius: 50%;
         box-shadow: 0 5px 20px 15px $second,
         0 0px 100px 20px $main,
@@ -421,15 +421,15 @@ $flame-height: 150px;
 .flame-darkblue {
     $main: #2d5a81;
     $second: #649ec6;
-    opacity: 0;
-    width: 20px;
+    
+    width: 30px;
     height: $flame-height;
     margin: 0px auto;
     position: relative;
     animation: move 3s infinite, move-left 3s infinite;
     transform-origin: 50% 90%;
     .top {
-        width: 20px;
+        width: 30px;
         height: 100%;
         position: absolute;
         top: 0;
@@ -454,7 +454,7 @@ $flame-height: 150px;
         left: 50%;
         top: 0;
         width: 1px;
-        height: 60px;
+        height: 100px;
         border-radius: 50%;
         box-shadow: 0 5px 20px 15px $second,
         0 0px 100px 20px $main,
@@ -500,15 +500,15 @@ $flame-height: 150px;
 .flame-violet {
     $main: #9a0c7e;
     $second: #c62ac1;
-    opacity: 0;
-    width: 20px;
+    
+    width: 30px;
     height: $flame-height;
     margin: 0px auto;
     position: relative;
     animation: move 3s infinite, move-left 3s infinite;
     transform-origin: 50% 90%;
     .top {
-        width: 20px;
+        width: 30px;
         height: 100%;
         position: absolute;
         top: 0;
@@ -533,7 +533,7 @@ $flame-height: 150px;
         left: 50%;
         top: 0;
         width: 1px;
-        height: 60px;
+        height: 100px;
         border-radius: 50%;
         box-shadow: 0 5px 20px 15px $second,
         0 0px 100px 20px $main,
@@ -576,6 +576,7 @@ $flame-height: 150px;
         }
     }
 }
+
 .flame_handler {
     display: flex;
     width: 80vh;
@@ -583,7 +584,52 @@ $flame-height: 150px;
     justify-content: center;
     align-items: center;
 }
+
 .audio {
     width: 0;
     height: 0;
+}
+
+.fullscreen-button {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.fullscreen-icon {
+  width: 25px;
+  height: 25px;
+
+}
+.element {
+    font-size: 20px;
+    color: white;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.candle-handler {
+    opacity: 0;
+
+}
+.switches {
+    position: absolute;
+    bottom: 5px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.switch {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.text {
+    color: white;
+    padding-right: 20px;
 }
