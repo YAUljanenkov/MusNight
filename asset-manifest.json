@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/MusNight/static/css/main.1281bc96.chunk.css",
-    "main.js": "/MusNight/static/js/main.744f256b.chunk.js",
-    "main.js.map": "/MusNight/static/js/main.744f256b.chunk.js.map",
+    "main.css": "/MusNight/static/css/main.4e2c6618.chunk.css",
+    "main.js": "/MusNight/static/js/main.407e90af.chunk.js",
+    "main.js.map": "/MusNight/static/js/main.407e90af.chunk.js.map",
     "runtime~main.js": "/MusNight/static/js/runtime~main.065c49f0.js",
     "runtime~main.js.map": "/MusNight/static/js/runtime~main.065c49f0.js.map",
-    "static/js/2.15bc8e8a.chunk.js": "/MusNight/static/js/2.15bc8e8a.chunk.js",
-    "static/js/2.15bc8e8a.chunk.js.map": "/MusNight/static/js/2.15bc8e8a.chunk.js.map",
+    "static/js/2.32353c79.chunk.js": "/MusNight/static/js/2.32353c79.chunk.js",
+    "static/js/2.32353c79.chunk.js.map": "/MusNight/static/js/2.32353c79.chunk.js.map",
     "index.html": "/MusNight/index.html",
-    "precache-manifest.23da3cb2efb8c71f48d22822faba8670.js": "/MusNight/precache-manifest.23da3cb2efb8c71f48d22822faba8670.js",
+    "precache-manifest.7e478da6e53100183dba2bf7aa6b51b5.js": "/MusNight/precache-manifest.7e478da6e53100183dba2bf7aa6b51b5.js",
     "service-worker.js": "/MusNight/service-worker.js",
-    "static/css/main.1281bc96.chunk.css.map": "/MusNight/static/css/main.1281bc96.chunk.css.map",
+    "static/css/main.4e2c6618.chunk.css.map": "/MusNight/static/css/main.4e2c6618.chunk.css.map",
     "static/media/1.wav": "/MusNight/static/media/1.cca99965.wav",
     "static/media/2.wav": "/MusNight/static/media/2.fea51b10.wav",
     "static/media/3.wav": "/MusNight/static/media/3.0c0cf51b.wav",
     "static/media/4.wav": "/MusNight/static/media/4.d8bf6d47.wav",
     "static/media/5.wav": "/MusNight/static/media/5.148d978b.wav",
     "static/media/6.wav": "/MusNight/static/media/6.59cc4111.wav",
-    "static/media/7.wav": "/MusNight/static/media/7.5e0c004d.wav"
+    "static/media/7.wav": "/MusNight/static/media/7.5e0c004d.wav",
+    "static/media/beetohoven.mp3": "/MusNight/static/media/beetohoven.e9aaacf1.mp3",
+    "static/media/play.png": "/MusNight/static/media/play.9b863eca.png"
   }
 }

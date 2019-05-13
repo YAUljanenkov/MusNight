@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ab5224fb8a6dbeabeacb5406a871175c",
+    "revision": "7f6905a87f67228736f0536f86f6e0c5",
     "url": "/MusNight/index.html"
   },
   {
-    "revision": "7b96818c4589e60d4908",
-    "url": "/MusNight/static/css/main.1281bc96.chunk.css"
+    "revision": "dc5b8d02c92c18ae284d",
+    "url": "/MusNight/static/css/main.4e2c6618.chunk.css"
   },
   {
-    "revision": "09455dbb8717c1ce9a8b",
-    "url": "/MusNight/static/js/2.15bc8e8a.chunk.js"
+    "revision": "6b49a9b17e6f41dc79c4",
+    "url": "/MusNight/static/js/2.32353c79.chunk.js"
   },
   {
-    "revision": "7b96818c4589e60d4908",
-    "url": "/MusNight/static/js/main.744f256b.chunk.js"
+    "revision": "dc5b8d02c92c18ae284d",
+    "url": "/MusNight/static/js/main.407e90af.chunk.js"
   },
   {
     "revision": "2ca59451f7f3e0ac2894",
@@ -46,5 +46,13 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5e0c004da690404b78305ff1d4ef3893",
     "url": "/MusNight/static/media/7.5e0c004d.wav"
+  },
+  {
+    "revision": "e9aaacf1d09180df2bb94446d9d072ca",
+    "url": "/MusNight/static/media/beetohoven.e9aaacf1.mp3"
+  },
+  {
+    "revision": "9b863eca7771eec54fe37bf122903053",
+    "url": "/MusNight/static/media/play.9b863eca.png"
   }
 ]);
