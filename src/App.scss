@@ -10,12 +10,12 @@ body{
     justify-content: center;
 }
 
-$flame-height: 200px;
+$flame-height: 50vh;
 
 
 .candle{
-    width: 45px;
-    margin: 30px 60px 0 60px;
+    width: 7vh;
+    margin: 30px 5vw 0 5vw;
     position: relative;
     height: 80%;
     align-self: flex-end;
@@ -23,32 +23,110 @@ $flame-height: 200px;
 }
 
 .flame-orange {
-    $main: #ff6a00;
-    $second: gold;
-    
-    width: 30px;
+     $main: orange;
+     $second: gold;
+
+     width: 7vh;
+     height: $flame-height;
+     margin: 0px auto;
+     position: relative;
+     //animation: move 3s infinite, move-left 3s infinite;
+     transform-origin: 50% 90%;
+     .top {
+         width: 7vh;
+         height: 100%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         background: $main;
+         //transform: skewY(-10deg);
+         box-shadow: inset 0 30px 40px 40px $main,
+         0 0px 0px 3px $main,
+         0 -20px 1px 4px $main,
+         0 -30px 5px 4px $main, //top
+         0 0px 150px 10px $main, //global
+         0 -10px 2px 4px $main,
+         0 -5px 3px 3px $main;
+         //animation: flame-up-orange 4s infinite;
+         overflow: hidden;
+
+     }
+
+     .shadows {
+         position: absolute;
+         left: 50%;
+         top: 0;
+         width: 5px;
+         height: 100px;
+         border-radius: 50%;
+         box-shadow: 0 5px 20px 15px $second,
+         0 0px 100px 20px $main,
+         0 15px 50px 15px $main,
+         5px 30px 5px 13px $main,
+         5px 50px 5px 13px $main,
+         0 75px 50px 30px black;
+     }
+
+     @keyframes move {
+         0% {
+             transform: skewX(2deg) skewY(5deg)
+         }
+         50% {
+             transform: skewX(-2deg) skewY(-0deg)
+         }
+         100% {
+             transform: skewX(2deg) skewY(5deg)
+         }
+     }
+     @keyframes move-left {
+         50% {
+             transform: skewX(3deg);
+         }
+     }
+     @keyframes flame-up-orange {
+         50% {
+             box-shadow: 0 0px 0px 3px white,
+             0 -38px 1px 2px white,
+             0 -41px 2px 3px $second,
+             0 -50px 5px 4px $main, //orange top
+             0 0px 150px 10px $main, //orange global
+             0 -10px 2px 4px white,
+             0 -5px 3px 3px white;
+         }
+     }
+     @keyframes blink {
+         50% {
+             opacity: 0.95;
+         }
+     }
+ }
+
+.flame-red {
+    $main: #ff1900;
+    $second: #ff4400;
+
+    width: 7vh;
     height: $flame-height;
     margin: 0px auto;
     position: relative;
-    animation: move 3s infinite, move-left 3s infinite;
+    //animation: move 3s infinite, move-left 3s infinite;
     transform-origin: 50% 90%;
     .top {
-        width: 30px;
+        width: 7vh;
         height: 100%;
         position: absolute;
         top: 0;
         left: 0;
-        background: white;
-        border-radius: 500% 500% 50px 50px;
-        transform: skewY(-10deg);
-        box-shadow: 0 0px 0px 3px white,
-        0 -20px 1px 4px white,
-        0 -25px 2px 3px $second,
+        background: $main;
+        //transform: skewY(-10deg);
+        box-shadow: inset 0 30px 40px 40px $main,
+        0 0px 0px 3px $main,
+        0 -20px 1px 4px $main,
         0 -30px 5px 4px $main, //top
         0 0px 150px 10px $main, //global
-        0 -10px 2px 4px white,
-        0 -5px 3px 3px white;
-        animation: flame-up-orange 4s infinite;
+        0 -10px 2px 4px $main,
+        0 -5px 3px 3px $main;
+        //animation: flame-up-orange 4s infinite;
         overflow: hidden;
 
     }
@@ -57,7 +135,397 @@ $flame-height: 200px;
         position: absolute;
         left: 50%;
         top: 0;
-        width: 1px;
+        width: 5px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 0 5px 20px 15px $second,
+        0 0px 100px 20px $main,
+        0 15px 50px 15px $main,
+        5px 30px 5px 13px $main,
+        5px 50px 5px 13px $main,
+        0 75px 50px 30px black;
+    }
+
+    @keyframes move {
+        0% {
+            transform: skewX(2deg) skewY(5deg)
+        }
+        50% {
+            transform: skewX(-2deg) skewY(-0deg)
+        }
+        100% {
+            transform: skewX(2deg) skewY(5deg)
+        }
+    }
+    @keyframes move-left {
+        50% {
+            transform: skewX(3deg);
+        }
+    }
+    @keyframes flame-up-orange {
+        50% {
+            box-shadow: 0 0px 0px 3px white,
+            0 -38px 1px 2px white,
+            0 -41px 2px 3px $second,
+            0 -50px 5px 4px $main, //orange top
+            0 0px 150px 10px $main, //orange global
+            0 -10px 2px 4px white,
+            0 -5px 3px 3px white;
+        }
+    }
+    @keyframes blink {
+        50% {
+            opacity: 0.95;
+        }
+    }
+}
+.flame-yellow {
+    $main: yellow;
+    $second: #fdff64;
+
+    width: 7vh;
+    height: $flame-height;
+    margin: 0px auto;
+    position: relative;
+    //animation: move 3s infinite, move-left 3s infinite;
+    transform-origin: 50% 90%;
+    .top {
+        width: 7vh;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $main;
+        //transform: skewY(-10deg);
+        box-shadow: inset 0 30px 40px 40px $main,
+        0 0px 0px 3px $main,
+        0 -20px 1px 4px $main,
+        0 -30px 5px 4px $main, //top
+        0 0px 150px 10px $main, //global
+        0 -10px 2px 4px $main,
+        0 -5px 3px 3px $main;
+        //animation: flame-up-orange 4s infinite;
+        overflow: hidden;
+
+    }
+
+    .shadows {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 5px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 0 5px 20px 15px $second,
+        0 0px 100px 20px $main,
+        0 15px 50px 15px $main,
+        5px 30px 5px 13px $main,
+        5px 50px 5px 13px $main,
+        0 75px 50px 30px black;
+    }
+
+    @keyframes move {
+        0% {
+            transform: skewX(2deg) skewY(5deg)
+        }
+        50% {
+            transform: skewX(-2deg) skewY(-0deg)
+        }
+        100% {
+            transform: skewX(2deg) skewY(5deg)
+        }
+    }
+    @keyframes move-left {
+        50% {
+            transform: skewX(3deg);
+        }
+    }
+    @keyframes flame-up-orange {
+        50% {
+            box-shadow: 0 0px 0px 3px white,
+            0 -38px 1px 2px white,
+            0 -41px 2px 3px $second,
+            0 -50px 5px 4px $main, //orange top
+            0 0px 150px 10px $main, //orange global
+            0 -10px 2px 4px white,
+            0 -5px 3px 3px white;
+        }
+    }
+    @keyframes blink {
+        50% {
+            opacity: 0.95;
+        }
+    }
+}
+.flame-green {
+    $main: #23be00;
+    $second: #2dff00;
+
+    width: 7vh;
+    height: $flame-height;
+    margin: 0px auto;
+    position: relative;
+    //animation: move 3s infinite, move-left 3s infinite;
+    transform-origin: 50% 90%;
+    .top {
+        width: 7vh;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $main;
+        //transform: skewY(-10deg);
+        box-shadow: inset 0 30px 40px 40px $main,
+        0 0px 0px 3px $main,
+        0 -20px 1px 4px $main,
+        0 -30px 5px 4px $main, //top
+        0 0px 150px 10px $main, //global
+        0 -10px 2px 4px $main,
+        0 -5px 3px 3px $main;
+        //animation: flame-up-orange 4s infinite;
+        overflow: hidden;
+
+    }
+
+    .shadows {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 5px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 0 5px 20px 15px $second,
+        0 0px 100px 20px $main,
+        0 15px 50px 15px $main,
+        5px 30px 5px 13px $main,
+        5px 50px 5px 13px $main,
+        0 75px 50px 30px black;
+    }
+
+    @keyframes move {
+        0% {
+            transform: skewX(2deg) skewY(5deg)
+        }
+        50% {
+            transform: skewX(-2deg) skewY(-0deg)
+        }
+        100% {
+            transform: skewX(2deg) skewY(5deg)
+        }
+    }
+    @keyframes move-left {
+        50% {
+            transform: skewX(3deg);
+        }
+    }
+    @keyframes flame-up-orange {
+        50% {
+            box-shadow: 0 0px 0px 3px white,
+            0 -38px 1px 2px white,
+            0 -41px 2px 3px $second,
+            0 -50px 5px 4px $main, //orange top
+            0 0px 150px 10px $main, //orange global
+            0 -10px 2px 4px white,
+            0 -5px 3px 3px white;
+        }
+    }
+    @keyframes blink {
+        50% {
+            opacity: 0.95;
+        }
+    }
+}
+.flame-blue {
+    $main: #3590be;
+    $second: #7fcfff;
+
+    width: 7vh;
+    height: $flame-height;
+    margin: 0px auto;
+    position: relative;
+    //animation: move 3s infinite, move-left 3s infinite;
+    transform-origin: 50% 90%;
+    .top {
+        width: 7vh;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $main;
+        //transform: skewY(-10deg);
+        box-shadow: inset 0 30px 40px 40px $main,
+        0 0px 0px 3px $main,
+        0 -20px 1px 4px $main,
+        0 -30px 5px 4px $main, //top
+        0 0px 150px 10px $main, //global
+        0 -10px 2px 4px $main,
+        0 -5px 3px 3px $main;
+        //animation: flame-up-orange 4s infinite;
+        overflow: hidden;
+
+    }
+
+    .shadows {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 5px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 0 5px 20px 15px $second,
+        0 0px 100px 20px $main,
+        0 15px 50px 15px $main,
+        5px 30px 5px 13px $main,
+        5px 50px 5px 13px $main,
+        0 75px 50px 30px black;
+    }
+
+    @keyframes move {
+        0% {
+            transform: skewX(2deg) skewY(5deg)
+        }
+        50% {
+            transform: skewX(-2deg) skewY(-0deg)
+        }
+        100% {
+            transform: skewX(2deg) skewY(5deg)
+        }
+    }
+    @keyframes move-left {
+        50% {
+            transform: skewX(3deg);
+        }
+    }
+    @keyframes flame-up-orange {
+        50% {
+            box-shadow: 0 0px 0px 3px white,
+            0 -38px 1px 2px white,
+            0 -41px 2px 3px $second,
+            0 -50px 5px 4px $main, //orange top
+            0 0px 150px 10px $main, //orange global
+            0 -10px 2px 4px white,
+            0 -5px 3px 3px white;
+        }
+    }
+    @keyframes blink {
+        50% {
+            opacity: 0.95;
+        }
+    }
+}
+.flame-darkblue {
+    $main: blue;
+    $second: #332de6;
+
+    width: 7vh;
+    height: $flame-height;
+    margin: 0px auto;
+    position: relative;
+    //animation: move 3s infinite, move-left 3s infinite;
+    transform-origin: 50% 90%;
+    .top {
+        width: 7vh;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $main;
+        //transform: skewY(-10deg);
+        box-shadow: inset 0 30px 40px 40px $main,
+        0 0px 0px 3px $main,
+        0 -20px 1px 4px $main,
+        0 -30px 5px 4px $main, //top
+        0 0px 150px 10px $main, //global
+        0 -10px 2px 4px $main,
+        0 -5px 3px 3px $main;
+        //animation: flame-up-orange 4s infinite;
+        overflow: hidden;
+
+    }
+
+    .shadows {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 5px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 0 5px 20px 15px $second,
+        0 0px 100px 20px $main,
+        0 15px 50px 15px $main,
+        5px 30px 5px 13px $main,
+        5px 50px 5px 13px $main,
+        0 75px 50px 30px black;
+    }
+
+    @keyframes move {
+        0% {
+            transform: skewX(2deg) skewY(5deg)
+        }
+        50% {
+            transform: skewX(-2deg) skewY(-0deg)
+        }
+        100% {
+            transform: skewX(2deg) skewY(5deg)
+        }
+    }
+    @keyframes move-left {
+        50% {
+            transform: skewX(3deg);
+        }
+    }
+    @keyframes flame-up-orange {
+        50% {
+            box-shadow: 0 0px 0px 3px white,
+            0 -38px 1px 2px white,
+            0 -41px 2px 3px $second,
+            0 -50px 5px 4px $main, //orange top
+            0 0px 150px 10px $main, //orange global
+            0 -10px 2px 4px white,
+            0 -5px 3px 3px white;
+        }
+    }
+    @keyframes blink {
+        50% {
+            opacity: 0.95;
+        }
+    }
+}
+.flame-violet {
+    $main: #9a0c7e;
+    $second: #c62ac1;
+
+    width: 7vh;
+    height: $flame-height;
+    margin: 0px auto;
+    position: relative;
+    //animation: move 3s infinite, move-left 3s infinite;
+    transform-origin: 50% 90%;
+    .top {
+        width: 7vh;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $main;
+        //transform: skewY(-10deg);
+        box-shadow: inset 0 30px 40px 40px $main,
+        0 0px 0px 3px $main,
+        0 -20px 1px 4px $main,
+        0 -30px 5px 4px $main, //top
+        0 0px 150px 10px $main, //global
+        0 -10px 2px 4px $main,
+        0 -5px 3px 3px $main;
+        //animation: flame-up-orange 4s infinite;
+        overflow: hidden;
+
+    }
+
+    .shadows {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 5px;
         height: 100px;
         border-radius: 50%;
         box-shadow: 0 5px 20px 15px $second,
@@ -102,481 +570,6 @@ $flame-height: 200px;
     }
 }
 
-.flame-red {
-    $main: #ff1900;
-    $second: #ff4400;
-    
-    width: 30px;
-    height: $flame-height;
-    margin: 0px auto;
-    position: relative;
-    animation: move 3s infinite, move-left 3s infinite;
-    transform-origin: 50% 90%;
-    .top {
-        width: 30px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: white;
-        border-radius: 500% 500% 50px 50px;
-        transform: skewY(-10deg);
-        box-shadow: 0 0px 0px 3px white,
-        0 -20px 1px 4px white,
-        0 -25px 2px 3px $second,
-        0 -30px 5px 4px $main, //top
-        0 0px 150px 10px $main, //global
-        0 -10px 2px 4px white,
-        0 -5px 3px 3px white;
-        animation: flame-up-red 4s infinite;
-        overflow: hidden;
-
-    }
-
-    .shadows {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        width: 1px;
-        height: 100px;
-        border-radius: 50%;
-        box-shadow: 0 5px 20px 15px $second,
-        0 0px 100px 20px $main,
-        0 15px 50px 15px $main,
-        5px 30px 5px 13px $main,
-        5px 50px 5px 13px $main,
-        0 75px 50px 30px black;
-    }
-
-    @keyframes move {
-        0% {
-            transform: skewX(2deg) skewY(5deg)
-        }
-        50% {
-            transform: skewX(-2deg) skewY(-0deg)
-        }
-        100% {
-            transform: skewX(2deg) skewY(5deg)
-        }
-    }
-    @keyframes move-left {
-        50% {
-            transform: skewX(3deg);
-        }
-    }
-    @keyframes flame-up-red {
-        50% {
-            box-shadow: 0 0px 0px 3px white,
-            0 -38px 1px 2px white,
-            0 -41px 2px 3px $second,
-            0 -50px 5px 4px $main, //orange top
-            0 0px 150px 10px $main, //orange global
-            0 -10px 2px 4px white,
-            0 -5px 3px 3px white;
-        }
-    }
-    @keyframes blink {
-        50% {
-            opacity: 0.95;
-        }
-    }
-}
-.flame-yellow {
-    $main: #ffa31b;
-    $second: #eaff1b;
-    
-    width: 30px;
-    height: $flame-height;
-    margin: 0px auto;
-    position: relative;
-    animation: move 3s infinite, move-left 3s infinite;
-    transform-origin: 50% 90%;
-    .top {
-        width: 30px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: white;
-        border-radius: 500% 500% 50px 50px;
-        transform: skewY(-10deg);
-        box-shadow: 0 0px 0px 3px white,
-        0 -20px 1px 4px white,
-        0 -25px 2px 3px $second,
-        0 -30px 5px 4px $main, //top
-        0 0px 150px 10px $main, //global
-        0 -10px 2px 4px white,
-        0 -5px 3px 3px white;
-        animation: flame-up-yellow 4s infinite;
-        overflow: hidden;
-
-    }
-
-    .shadows {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        width: 1px;
-        height: 100px;
-        border-radius: 50%;
-        box-shadow: 0 5px 20px 15px $second,
-        0 0px 100px 20px $main,
-        0 15px 50px 15px $main,
-        5px 30px 5px 13px $main,
-        5px 50px 5px 13px $main,
-        0 75px 50px 30px black;
-    }
-
-    @keyframes move {
-        0% {
-            transform: skewX(2deg) skewY(5deg)
-        }
-        50% {
-            transform: skewX(-2deg) skewY(-0deg)
-        }
-        100% {
-            transform: skewX(2deg) skewY(5deg)
-        }
-    }
-    @keyframes move-left {
-        50% {
-            transform: skewX(3deg);
-        }
-    }
-    @keyframes flame-up-yellow {
-        50% {
-            box-shadow: 0 0px 0px 3px white,
-            0 -38px 1px 2px white,
-            0 -41px 2px 3px $second,
-            0 -50px 5px 4px $main, //orange top
-            0 0px 150px 10px $main, //orange global
-            0 -10px 2px 4px white,
-            0 -5px 3px 3px white;
-        }
-    }
-    @keyframes blink {
-        50% {
-            opacity: 0.95;
-        }
-    }
-}
-.flame-green {
-    $main: #23be00;
-    $second: #2dff00;
-    
-    width: 30px;
-    height: $flame-height;
-    margin: 0px auto;
-    position: relative;
-    animation: move 3s infinite, move-left 3s infinite;
-    transform-origin: 50% 90%;
-    .top {
-        width: 30px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: white;
-        border-radius: 500% 500% 50px 50px;
-        transform: skewY(-10deg);
-        box-shadow: 0 0px 0px 3px white,
-        0 -20px 1px 4px white,
-        0 -25px 2px 3px $second,
-        0 -30px 5px 4px $main, //top
-        0 0px 150px 10px $main, //global
-        0 -10px 2px 4px white,
-        0 -5px 3px 3px white;
-        animation: flame-up-green 4s infinite;
-        overflow: hidden;
-
-    }
-
-    .shadows {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        width: 1px;
-        height: 100px;
-        border-radius: 50%;
-        box-shadow: 0 5px 20px 15px $second,
-        0 0px 100px 20px $main,
-        0 15px 50px 15px $main,
-        5px 30px 5px 13px $main,
-        5px 50px 5px 13px $main,
-        0 75px 50px 30px black;
-    }
-
-    @keyframes move {
-        0% {
-            transform: skewX(2deg) skewY(5deg)
-        }
-        50% {
-            transform: skewX(-2deg) skewY(-0deg)
-        }
-        100% {
-            transform: skewX(2deg) skewY(5deg)
-        }
-    }
-    @keyframes move-left {
-        50% {
-            transform: skewX(3deg);
-        }
-    }
-    @keyframes flame-up-green {
-        50% {
-            box-shadow: 0 0px 0px 3px white,
-            0 -38px 1px 2px white,
-            0 -41px 2px 3px $second,
-            0 -50px 5px 4px $main, //orange top
-            0 0px 150px 10px $main, //orange global
-            0 -10px 2px 4px white,
-            0 -5px 3px 3px white;
-        }
-    }
-    @keyframes blink {
-        50% {
-            opacity: 0.95;
-        }
-    }
-}
-.flame-blue {
-    $main: #3590be;
-    $second: #7fcfff;
-    
-    width: 30px;
-    height: $flame-height;
-    margin: 0px auto;
-    position: relative;
-    animation: move 3s infinite, move-left 3s infinite;
-    transform-origin: 50% 90%;
-    .top {
-        width: 30px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: white;
-        border-radius: 500% 500% 50px 50px;
-        transform: skewY(-10deg);
-        box-shadow: 0 0px 0px 3px white,
-        0 -20px 1px 4px white,
-        0 -25px 2px 3px $second,
-        0 -30px 5px 4px $main, //top
-        0 0px 150px 10px $main, //global
-        0 -10px 2px 4px white,
-        0 -5px 3px 3px white;
-        animation: flame-up-blue 4s infinite;
-        overflow: hidden;
-
-    }
-
-    .shadows {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        width: 1px;
-        height: 100px;
-        border-radius: 50%;
-        box-shadow: 0 5px 20px 15px $second,
-        0 0px 100px 20px $main,
-        0 15px 50px 15px $main,
-        5px 30px 5px 13px $main,
-        5px 50px 5px 13px $main,
-        0 75px 50px 30px black;
-    }
-
-    @keyframes move {
-        0% {
-            transform: skewX(2deg) skewY(5deg)
-        }
-        50% {
-            transform: skewX(-2deg) skewY(-0deg)
-        }
-        100% {
-            transform: skewX(2deg) skewY(5deg)
-        }
-    }
-    @keyframes move-left {
-        50% {
-            transform: skewX(3deg);
-        }
-    }
-    @keyframes flame-up-blue {
-        50% {
-            box-shadow: 0 0px 0px 3px white,
-            0 -38px 1px 2px white,
-            0 -41px 2px 3px $second,
-            0 -50px 5px 4px $main, //orange top
-            0 0px 150px 10px $main, //orange global
-            0 -10px 2px 4px white,
-            0 -5px 3px 3px white;
-        }
-    }
-    @keyframes blink {
-        50% {
-            opacity: 0.95;
-        }
-    }
-}
-.flame-darkblue {
-    $main: #2d5a81;
-    $second: #649ec6;
-    
-    width: 30px;
-    height: $flame-height;
-    margin: 0px auto;
-    position: relative;
-    animation: move 3s infinite, move-left 3s infinite;
-    transform-origin: 50% 90%;
-    .top {
-        width: 30px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: white;
-        border-radius: 500% 500% 50px 50px;
-        transform: skewY(-10deg);
-        box-shadow: 0 0px 0px 3px white,
-        0 -20px 1px 4px white,
-        0 -25px 2px 3px $second,
-        0 -30px 5px 4px $main, //top
-        0 0px 150px 10px $main, //global
-        0 -10px 2px 4px white,
-        0 -5px 3px 3px white;
-        animation: flame-up-darkblue 4s infinite;
-        overflow: hidden;
-
-    }
-
-    .shadows {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        width: 1px;
-        height: 100px;
-        border-radius: 50%;
-        box-shadow: 0 5px 20px 15px $second,
-        0 0px 100px 20px $main,
-        0 15px 50px 15px $main,
-        5px 30px 5px 13px $main,
-        5px 50px 5px 13px $main,
-        0 75px 50px 30px black;
-    }
-
-    @keyframes move {
-        0% {
-            transform: skewX(2deg) skewY(5deg)
-        }
-        50% {
-            transform: skewX(-2deg) skewY(-0deg)
-        }
-        100% {
-            transform: skewX(2deg) skewY(5deg)
-        }
-    }
-    @keyframes move-left {
-        50% {
-            transform: skewX(3deg);
-        }
-    }
-    @keyframes flame-up-darkblue {
-        50% {
-            box-shadow: 0 0px 0px 3px white,
-            0 -38px 1px 2px white,
-            0 -41px 2px 3px $second,
-            0 -50px 5px 4px $main, //orange top
-            0 0px 150px 10px $main, //orange global
-            0 -10px 2px 4px white,
-            0 -5px 3px 3px white;
-        }
-    }
-    @keyframes blink {
-        50% {
-            opacity: 0.95;
-        }
-    }
-}
-.flame-violet {
-    $main: #9a0c7e;
-    $second: #c62ac1;
-    
-    width: 30px;
-    height: $flame-height;
-    margin: 0px auto;
-    position: relative;
-    animation: move 3s infinite, move-left 3s infinite;
-    transform-origin: 50% 90%;
-    .top {
-        width: 30px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: white;
-        border-radius: 500% 500% 50px 50px;
-        transform: skewY(-10deg);
-        box-shadow: 0 0px 0px 3px white,
-        0 -20px 1px 4px white,
-        0 -25px 2px 3px $second,
-        0 -30px 5px 4px $main, //top
-        0 0px 150px 10px $main, //global
-        0 -10px 2px 4px white,
-        0 -5px 3px 3px white;
-        animation: flame-up-violet 4s infinite;
-        overflow: hidden;
-
-    }
-
-    .shadows {
-        position: absolute;
-        left: 50%;
-        top: 0;
-        width: 1px;
-        height: 100px;
-        border-radius: 50%;
-        box-shadow: 0 5px 20px 15px $second,
-        0 0px 100px 20px $main,
-        0 15px 50px 15px $main,
-        5px 30px 5px 13px $main,
-        5px 50px 5px 13px $main,
-        0 75px 50px 30px black;
-    }
-
-    @keyframes move {
-        0% {
-            transform: skewX(2deg) skewY(5deg)
-        }
-        50% {
-            transform: skewX(-2deg) skewY(-0deg)
-        }
-        100% {
-            transform: skewX(2deg) skewY(5deg)
-        }
-    }
-    @keyframes move-left {
-        50% {
-            transform: skewX(3deg);
-        }
-    }
-    @keyframes flame-up-violet {
-        50% {
-            box-shadow: 0 0px 0px 3px white,
-            0 -38px 1px 2px white,
-            0 -41px 2px 3px $second,
-            0 -50px 5px 4px $main, //orange top
-            0 0px 150px 10px $main, //orange global
-            0 -10px 2px 4px white,
-            0 -5px 3px 3px white;
-        }
-    }
-    @keyframes blink {
-        50% {
-            opacity: 0.95;
-        }
-    }
-}
-
 .flame_handler {
     display: flex;
     width: 80vh;
@@ -597,13 +590,18 @@ $flame-height: 200px;
   right: 10px;
 }
 
-.fullscreen-icon {
+.fullscreen-icon, .play-icon {
   width: 25px;
   height: 25px;
 
 }
+.elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .element {
-    font-size: 20px;
+    font-size: 2vw;
     color: white;
     z-index: 20;
     display: flex;
@@ -632,4 +630,9 @@ $flame-height: 200px;
 .text {
     color: white;
     padding-right: 20px;
+}
+.play {
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
 }

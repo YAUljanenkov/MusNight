@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "express": "^4.16.4",
+    "gh-pages": "^2.0.1",
     "howler": "^2.1.2",
     "jquery": "^3.4.1",
     "node-sass": "^4.12.0",
@@ -17,10 +18,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://yauljanenkov.github.io/MusNight/",
   "eslintConfig": {
     "extends": "react-app"
   },
