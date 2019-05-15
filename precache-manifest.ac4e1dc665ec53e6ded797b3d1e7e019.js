@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f6905a87f67228736f0536f86f6e0c5",
+    "revision": "84ea57f9d6c0d16ece65ec73545708c2",
     "url": "/MusNight/index.html"
   },
   {
-    "revision": "dc5b8d02c92c18ae284d",
+    "revision": "f908daf44239da614ba7",
     "url": "/MusNight/static/css/main.4e2c6618.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MusNight/static/js/2.32353c79.chunk.js"
   },
   {
-    "revision": "dc5b8d02c92c18ae284d",
-    "url": "/MusNight/static/js/main.407e90af.chunk.js"
+    "revision": "f908daf44239da614ba7",
+    "url": "/MusNight/static/js/main.0f511f09.chunk.js"
   },
   {
     "revision": "2ca59451f7f3e0ac2894",
