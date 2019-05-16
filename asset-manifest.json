@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MusNight/static/css/main.4e2c6618.chunk.css",
-    "main.js": "/MusNight/static/js/main.391186e5.chunk.js",
-    "main.js.map": "/MusNight/static/js/main.391186e5.chunk.js.map",
+    "main.js": "/MusNight/static/js/main.ce3250c5.chunk.js",
+    "main.js.map": "/MusNight/static/js/main.ce3250c5.chunk.js.map",
     "runtime~main.js": "/MusNight/static/js/runtime~main.065c49f0.js",
     "runtime~main.js.map": "/MusNight/static/js/runtime~main.065c49f0.js.map",
     "static/js/2.32353c79.chunk.js": "/MusNight/static/js/2.32353c79.chunk.js",
     "static/js/2.32353c79.chunk.js.map": "/MusNight/static/js/2.32353c79.chunk.js.map",
     "index.html": "/MusNight/index.html",
-    "precache-manifest.b7a6db25df843115ef06b68b4124cc80.js": "/MusNight/precache-manifest.b7a6db25df843115ef06b68b4124cc80.js",
+    "precache-manifest.c43202e847f06245108d2018db37b06c.js": "/MusNight/precache-manifest.c43202e847f06245108d2018db37b06c.js",
     "service-worker.js": "/MusNight/service-worker.js",
     "static/css/main.4e2c6618.chunk.css.map": "/MusNight/static/css/main.4e2c6618.chunk.css.map",
     "static/media/1.mp3": "/MusNight/static/media/1.961a3ee9.mp3",
@@ -18,7 +18,7 @@
     "static/media/5.mp3": "/MusNight/static/media/5.86511196.mp3",
     "static/media/6.mp3": "/MusNight/static/media/6.369b8cdc.mp3",
     "static/media/7.mp3": "/MusNight/static/media/7.a2f2c231.mp3",
-    "static/media/beetohoven.mp3": "/MusNight/static/media/beetohoven.e9aaacf1.mp3",
+    "static/media/beethoven.mp3": "/MusNight/static/media/beethoven.073dabc9.mp3",
     "static/media/play.png": "/MusNight/static/media/play.9b863eca.png"
   }
 }
