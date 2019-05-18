@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c634129ccdec0b53c0b5cc507db265c8",
+    "revision": "27d97689d9bee3984dd8c4b8f4517365",
     "url": "/MusNight/index.html"
   },
   {
-    "revision": "8612a01fde6249ab48ad",
-    "url": "/MusNight/static/css/main.4e2c6618.chunk.css"
+    "revision": "21dda76374e3c25e2ec6",
+    "url": "/MusNight/static/css/main.f3b75e6e.chunk.css"
   },
   {
     "revision": "6b49a9b17e6f41dc79c4",
     "url": "/MusNight/static/js/2.32353c79.chunk.js"
   },
   {
-    "revision": "8612a01fde6249ab48ad",
-    "url": "/MusNight/static/js/main.f2065acd.chunk.js"
+    "revision": "21dda76374e3c25e2ec6",
+    "url": "/MusNight/static/js/main.0ec07263.chunk.js"
   },
   {
     "revision": "2ca59451f7f3e0ac2894",
